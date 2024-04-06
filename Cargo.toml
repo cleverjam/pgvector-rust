@@ -27,7 +27,7 @@ serde = { version = "1", features = ["derive"], optional = true }
 diesel = { version = "2", default-features = false, features = [
     "32-column-tables",
 ] }
-sqlx = { version = "0", default-features = false, features = [
+sqlx = { version = "0.8.0-alpha.0", git = "https://github.com/cleverjam/sqlx", branch = "767-no-tx-migration", default-features = false, features = [
     "runtime-async-std-native-tls",
 ] }
 async-std = { version = "1", features = ["attributes"] }
